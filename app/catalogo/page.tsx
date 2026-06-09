@@ -10,6 +10,7 @@ import FiltrosSidebar from '@/components/catalogo/FiltrosSidebar';
 import BarraBusqueda from '@/components/catalogo/BarraBusqueda';
 import ProductoCard from '@/components/catalogo/ProductoCard';
 import CheckoutModal from '@/components/checkout/CheckoutModal';
+import ScrollAnimator from '@/components/ui/ScrollAnimator';
 
 function CatalogoContenido() {
   const searchParams = useSearchParams();
@@ -67,6 +68,7 @@ function CatalogoContenido() {
       </div>
 
       <CheckoutModal checkout={checkout} />
+      <ScrollAnimator />
     </>
   );
 }
